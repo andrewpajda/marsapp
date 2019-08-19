@@ -11,8 +11,8 @@ class Form extends Component {
     minDate: this.props.rovers[0].landing_date,
     maxDate: this.props.rovers[0].max_date,
     cameras: [],
-    
   }
+
   render() {
     return (
       <React.Fragment>
@@ -23,7 +23,8 @@ class Form extends Component {
       </React.Fragment>
     );
   }
-  componentDidMount () {
+
+  componentDidMount() {
     this.getCameras();
     this.setState({
       handleSubmit: this.props.handleSubmit(this.state.roverInput.name, this.state.dateInput, this.state.cameraInput),

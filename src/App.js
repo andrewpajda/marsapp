@@ -73,7 +73,6 @@ class App extends Component {
         <SplashScreen />
       )
     }
-    
   }
   
   componentDidMount() {
@@ -106,4 +105,3 @@ class App extends Component {
 }
  
 export default App;
-

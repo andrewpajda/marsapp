@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import Result from './ResultComponent';
 
 class ResultList extends Component {
-  state = {
-
-  }
   render() { 
     return (
       <div>

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class Dropdown extends Component {
-  state = {
-
-  }
   render() { 
     return (
       <select onChange={this.props.onChange}>

@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
 class SplashScreen extends Component {
-  state = {
-
-  }
   render() { 
     return (
       <header>
