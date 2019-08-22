@@ -15,12 +15,28 @@ class Form extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <Dropdown options={this.props.rovers} onChange={this.handleRoverSelection}/>
-        <Date minDate={this.state.minDate} maxDate={this.state.maxDate} value={this.state.dateInput } onChange={this.handleDateSelection}/>
-        <Dropdown options={this.state.cameras} onChange={this.handleCameraSelection}/>
-        <Button text={'Search'} onClick={() => this.state.handleSubmit(this.state.roverInput.name, this.state.dateInput, this.state.cameraInput)}/>
-      </React.Fragment>
+      <section id="form">
+        <div className="container">
+          <div className="flexbox">
+            <div id='rover-selection'>
+              <p>choose rover:</p>
+              <Dropdown options={this.props.rovers} onChange={this.handleRoverSelection}/>
+            </div>
+            <div id="date-selection">
+              <p>pick date:</p>
+              <Date minDate={this.state.minDate} maxDate={this.state.maxDate} value={this.state.dateInput } onChange={this.handleDateSelection}/>
+            </div>
+            <div id="camera-selection">
+              <p>choose camera:</p>
+              <Dropdown options={this.state.cameras} onChange={this.handleCameraSelection}/>
+            </div>
+          </div>
+          <div id="search-button">
+            <Button text={'Search'} onClick={() => this.state.handleSubmit(this.state.roverInput.name, this.state.dateInput, this.state.cameraInput)}/>
+          </div>
+        </div>
+      </section>
+      
     );
   }
 

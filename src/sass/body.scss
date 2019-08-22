@@ -1,0 +1,189 @@
+body {
+  background: $white-color;
+  color: $dark-blue;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $font-sm;
+  font-weight: 200;
+
+  .container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 $spacing-small;
+  }
+
+  .flexbox {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .divider {
+    height: 5px;
+    background: $light-orange;
+  }
+
+  header {
+    background: $dark-blue;
+    color: $white-color;
+    height: 160px;
+    padding: $spacing-large 0;
+
+    div#logo {
+      flex: 1;
+
+      img {
+        height: 160px;
+        width: 160px;
+      }
+    }
+    div#welcome{
+      flex: 5;
+      margin: 0 0 0 $spacing-large;
+
+      h1 {
+        margin: 0 0 $spacing-large 0;
+      }
+    }
+  }
+
+  section#form {
+    padding: $spacing-large 0 0 0;
+
+    div.flexbox{
+      flex-wrap: wrap;
+
+      div#rover-selection {
+        flex: 2;
+        text-align: center;
+        padding-right: $spacing-small;
+
+        p {
+          margin-bottom: $spacing-small
+        }
+
+        select {
+          width: 100%;
+          text-align: center;
+          font-family: inherit;
+          height: $input-height;
+          background: inherit;
+          border: 1px $bright-blue solid;
+        }
+      }
+      div#date-selection {
+        flex: 2;
+        text-align: center;
+        padding: 0 $spacing-small;
+
+        p {
+          margin-bottom: $spacing-small
+        }
+
+        input {
+          width: 100%;
+          text-align: center;
+          font-family: inherit;
+          height: $input-height;
+          background: inherit;
+          border: 1px $bright-blue solid;
+        }
+      }
+      div#camera-selection {
+        flex: 2;
+        text-align: center;
+        padding-left: $spacing-small;
+
+        p {
+          margin-bottom: $spacing-small
+        }
+
+        select {
+          width: 100%;
+          text-align: center;
+          font-family: inherit;
+          height: $input-height;
+          background: inherit;
+          border: 1px $bright-blue solid;
+        }
+      }
+    }
+    div#search-button {
+      width: 100%;
+      text-align: center;
+      margin: $spacing-small 0 $spacing-large 0;
+
+      button {
+        width: 100%;
+        height: $input-height;
+        background: $orange;
+        font-family: inherit;
+        font-size: inherit;
+        border: none;
+        color: $white-color;
+      }
+    }
+  }
+
+  section#results {
+    margin: $spacing-large 0 0 0;
+
+    h2 {
+      margin: 0 0 $spacing-large 0;
+    }
+
+    li {
+      border: 1px $bright-blue dashed;
+      margin: 0 0 $spacing-small 0;
+      list-style: none;
+
+      div.result {
+        display: flex;
+        flex-wrap: wrap;
+        height: 130px;
+        padding: $spacing-small $spacing-small;        
+
+        div.result-thumbnail {
+          order: 1;
+          flex: 1;
+          height: 130px;
+          width: 130px;
+
+          img.result-thumbnail-image {
+            max-height: 100%;
+            max-width: 100%;
+          }
+        }
+
+        div.result-description {
+          order: 2;
+          flex: 3;
+        }
+
+        div.result-view {
+          order: 3;
+          flex: 1;
+          margin: $spacing-large 0;
+          
+          button.result-view-button {
+            width: 100%;
+            height: $input-height;
+            background: $orange;
+            font-family: inherit;
+            font-size: inherit;
+            border: none;
+            color: $white-color;
+            
+            a.result-view-button-link:link {
+              text-decoration: none;
+              color: $white-color;
+            }
+
+            a.result-view-button-link:visited {
+              text-decoration: none;
+              color: $white-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

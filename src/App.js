@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Header from './components/HeaderComponent';
 import Form from './components/form/FormComponent';
+import Divider from './components/shared/DividerComponent';
 import ResultList from './components/results/ResultListComponent';
 import axios from 'axios';
 import SplashScreen from './components/SplashScreenComponent';
+import './sass/app.scss';
 
 class App extends Component {
   state = {
@@ -57,6 +59,7 @@ class App extends Component {
           <React.Fragment>
             <Header />
             <Form rovers={this.state.rovers} cameras={this.state.cameras} handleSubmit={() => this.handleSubmit}/>
+            <Divider />
             <ResultList results={this.state.results}/>
           </React.Fragment>
         )
@@ -65,6 +68,7 @@ class App extends Component {
           <React.Fragment>
             <Header />
             <Form rovers={this.state.rovers} cameras={this.state.cameras} handleSubmit={() => this.handleSubmit}/>
+            <Divider />
           </React.Fragment>
         ) 
       }
