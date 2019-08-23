@@ -29,6 +29,10 @@ header {
   background: $light-orange;
 }
 
+footer {
+  padding: $spacing-small 0;
+}
+
 @media (max-width: 768px) {
   .flexbox {
     flex-direction: column;

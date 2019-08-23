@@ -1,0 +1,15 @@
+div#footer {
+  text-align: center;
+  flex-direction: column;
+
+  div.footer-logo {
+    order: 1;
+  }
+  div.footer-copyrights {
+    order: 2;
+
+    p.footer-copyrigths-text {
+      font-size: 14px;
+    }
+  }
+}

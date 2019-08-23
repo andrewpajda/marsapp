@@ -5,6 +5,7 @@ import Divider from './components/shared/DividerComponent';
 import ResultList from './components/results/ResultListComponent';
 import axios from 'axios';
 import SplashScreen from './components/SplashScreenComponent';
+import Footer from './components/FooterComponent';
 import './sass/app.scss';
 
 class App extends Component {
@@ -67,6 +68,10 @@ class App extends Component {
             <section id="results">
               <ResultList results={this.state.results}/>
             </section>
+            <Divider />
+            <footer>
+              <Footer />
+            </footer>
           </React.Fragment>
         )
       } else {
@@ -79,14 +84,22 @@ class App extends Component {
               <Form rovers={this.state.rovers} cameras={this.state.cameras} handleSubmit={() => this.handleSubmit}/>
             </section>
             <Divider />
+            <footer>
+              <Footer />
+            </footer>
           </React.Fragment>
         ) 
       }
     } else {
       return (
-        <header>
-          <SplashScreen />
-        </header>
+        <React.Fragment>
+          <header>
+            <SplashScreen />
+          </header>
+          <footer>
+            <Footer />
+          </footer>         
+        </React.Fragment>
       )
     }
   }
