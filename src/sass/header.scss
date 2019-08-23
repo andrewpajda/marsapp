@@ -1,0 +1,28 @@
+div.header-logo {
+  flex: 1;
+
+  img.header-logo-image {
+    height: 160px;
+    width: 160px;
+  }
+}
+
+div.header-welcome {
+  flex: 5;
+  margin: 0 0 0 $spacing-large;
+
+  h1.header-welcome-title {
+    margin: 0 0 $spacing-large 0;
+  }
+}
+
+@media (max-width: 768px) {
+  div.header-logo {
+    display: none;
+  }
+
+  div.header-welcome {
+    margin: 0;
+    text-align: center;
+  }
+}

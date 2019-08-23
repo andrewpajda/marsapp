@@ -24,6 +24,7 @@ class Form extends Component {
           <div className='form-input' id="date-selection">
             <p className='form-input-label'>pick date:</p>
             <Date minDate={this.state.minDate} maxDate={this.state.maxDate} value={this.state.dateInput } onChange={this.handleDateSelection}/>
+            <span className="form-input-info">range: {this.state.minDate} - {this.state.maxDate}</span>
           </div>
           <div className='form-input' id="camera-selection">
             <p className='form-input-label'>choose camera:</p>
