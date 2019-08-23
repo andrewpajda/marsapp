@@ -15,28 +15,25 @@ class Form extends Component {
 
   render() {
     return (
-      <section id="form">
-        <div className="container">
-          <div className="flexbox">
-            <div id='rover-selection'>
-              <p>choose rover:</p>
-              <Dropdown options={this.props.rovers} onChange={this.handleRoverSelection}/>
-            </div>
-            <div id="date-selection">
-              <p>pick date:</p>
-              <Date minDate={this.state.minDate} maxDate={this.state.maxDate} value={this.state.dateInput } onChange={this.handleDateSelection}/>
-            </div>
-            <div id="camera-selection">
-              <p>choose camera:</p>
-              <Dropdown options={this.state.cameras} onChange={this.handleCameraSelection}/>
-            </div>
+      <div className="container">
+        <div className="flexbox">
+          <div className='form-input' id='rover-selection'>
+            <p className='form-input-label'>choose rover:</p>
+            <Dropdown options={this.props.rovers} onChange={this.handleRoverSelection}/>
           </div>
-          <div id="search-button">
-            <Button text={'Search'} onClick={() => this.state.handleSubmit(this.state.roverInput.name, this.state.dateInput, this.state.cameraInput)}/>
+          <div className='form-input' id="date-selection">
+            <p className='form-input-label'>pick date:</p>
+            <Date minDate={this.state.minDate} maxDate={this.state.maxDate} value={this.state.dateInput } onChange={this.handleDateSelection}/>
+          </div>
+          <div className='form-input' id="camera-selection">
+            <p className='form-input-label'>choose camera:</p>
+            <Dropdown options={this.state.cameras} onChange={this.handleCameraSelection}/>
           </div>
         </div>
-      </section>
-      
+        <div id="search-button">
+          <Button text={'Search'} onClick={() => this.state.handleSubmit(this.state.roverInput.name, this.state.dateInput, this.state.cameraInput)}/>
+        </div>
+      </div>
     );
   }
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 class Result extends Component {
   render() { 
     return (
-      <div className='result'>
+      <li className="result-list-item">
         <div className="result-thumbnail">
           <img className ="result-thumbnail-image" src={this.props.result.img_src} alt='taken by martian rover'/>
         </div>
@@ -14,7 +14,7 @@ class Result extends Component {
         <div className="result-view">
           <button className='result-view-button'><a className='result-view-button-link' href={this.props.result.img_src} target='blank'>View full image</a></button>
         </div>
-      </div>
+      </li>
     );
   }
 }

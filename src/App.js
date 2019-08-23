@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+ import React, { Component } from 'react';
 import Header from './components/HeaderComponent';
 import Form from './components/form/FormComponent';
 import Divider from './components/shared/DividerComponent';
@@ -57,24 +57,36 @@ class App extends Component {
       if(this.state.renderResults) {
         return (
           <React.Fragment>
-            <Header />
-            <Form rovers={this.state.rovers} cameras={this.state.cameras} handleSubmit={() => this.handleSubmit}/>
+            <header>
+              <Header />
+            </header>
+            <section id="form">
+              <Form rovers={this.state.rovers} cameras={this.state.cameras} handleSubmit={() => this.handleSubmit}/>
+            </section>
             <Divider />
-            <ResultList results={this.state.results}/>
+            <section id="results">
+              <ResultList results={this.state.results}/>
+            </section>
           </React.Fragment>
         )
       } else {
         return (
           <React.Fragment>
-            <Header />
-            <Form rovers={this.state.rovers} cameras={this.state.cameras} handleSubmit={() => this.handleSubmit}/>
+            <header>
+              <Header />
+            </header>
+            <section id="form">
+              <Form rovers={this.state.rovers} cameras={this.state.cameras} handleSubmit={() => this.handleSubmit}/>
+            </section>
             <Divider />
           </React.Fragment>
         ) 
       }
     } else {
       return (
-        <SplashScreen />
+        <header>
+          <SplashScreen />
+        </header>
       )
     }
   }

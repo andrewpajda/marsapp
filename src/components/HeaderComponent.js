@@ -3,19 +3,15 @@ import logo from '../assets/ootw_logo.png'
 
 function Header() {
   return (
-    <header>
-      <div class='container'>
-        <div class='flexbox'>
-          <div id='logo'>
-            <img src={logo} alt="mars application logotype"/>
-          </div>
-          <div id='welcome'>
-            <h1>Welcome to Mars App</h1>
-            <p>This simple app allows you to browse all the photos taken by martian rovers. Thanks to NASA API integration you can see what was seen by Curiosity, Opportunity and Spirit rovers. Enjoy!</p>
-          </div>
-        </div>
-      </div>
-    </header>
+  <div className='container flexbox'>
+    <div className='header-logo'>
+      <img className='header-logo-image' src={logo} alt="mars application logotype"/>
+    </div>
+    <div className='header-welcome'>
+      <h1 className='header-welcome-title'>Welcome to Mars App</h1>
+      <p className='header-welcome-text'>This simple app allows you to browse all the photos taken by martian rovers. Thanks to NASA API integration you can see what was seen by Curiosity, Opportunity and Spirit rovers. Enjoy!</p>
+    </div>
+  </div>
   )
 }
 
