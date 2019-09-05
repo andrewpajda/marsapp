@@ -1,3 +1,9 @@
+## UPDATES ON THE WAY
+
+This app will be maintained mainly by myself in my spare time. Right now I was able to identify what needs to be reworked, in order for the app to work properly. 
+
+- Every rover, has many dates that are returning empty set of photos. Presumably photos are not taken everyday. That creates a possibility for the user to feel that app is not working, because no results are being rendered. App does work as it should, but what needs to be implemented is date filtering so that the user's choice will be limited. This update will come up shortly.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
