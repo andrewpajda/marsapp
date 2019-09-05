@@ -72,7 +72,7 @@ class Form extends Component {
     if(this.state.dateInput !== '' && this.state.roverInput !== '') {
       if(this.state.roverInput.name !== 'Spirit') {
         const roverDate = this.state.roverInput.photos.filter(date => date.earth_date === this.state.dateInput);
-        const availableCameras = roverDate[0].cameras;
+        const availableCameras = roverDate[0] ? roverDate[0].cameras : [];
         this.setState({
           cameras: [{abbr: 'ALL', name: 'All'}, ...this.props.cameras.filter((camera) => availableCameras.includes(camera.abbr))],
         })
