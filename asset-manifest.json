@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/marsapp/static/css/main.21af302a.chunk.css",
+    "main.js": "/marsapp/static/js/main.862efaf0.chunk.js",
+    "main.js.map": "/marsapp/static/js/main.862efaf0.chunk.js.map",
+    "runtime~main.js": "/marsapp/static/js/runtime~main.a2220441.js",
+    "runtime~main.js.map": "/marsapp/static/js/runtime~main.a2220441.js.map",
+    "static/js/2.f06ccd68.chunk.js": "/marsapp/static/js/2.f06ccd68.chunk.js",
+    "static/js/2.f06ccd68.chunk.js.map": "/marsapp/static/js/2.f06ccd68.chunk.js.map",
+    "index.html": "/marsapp/index.html",
+    "precache-manifest.ffe2077399b7239df7ff77d7a841a942.js": "/marsapp/precache-manifest.ffe2077399b7239df7ff77d7a841a942.js",
+    "service-worker.js": "/marsapp/service-worker.js",
+    "static/css/main.21af302a.chunk.css.map": "/marsapp/static/css/main.21af302a.chunk.css.map"
+  }
+}
