@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/marsapp/precache-manifest.ffe2077399b7239df7ff77d7a841a942.js"
+  "/marsapp/precache-manifest.13eb337563f1e548e2d68887e4a0c80f.js"
 );
 
 self.addEventListener('message', (event) => {
